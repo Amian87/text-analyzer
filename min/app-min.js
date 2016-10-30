@@ -1,0 +1,1 @@
+$(document).ready(function(){$("button").click(function(){$("text-report").removeClass(".hidden");var e=$("#user-text").val(),t=e.split(" ").length;console.log(t);var l=e.replace(/\s+/g,"").split("").length,n=l/t;console.log(n);var o=e.split("\n").length})});
