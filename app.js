@@ -1,11 +1,13 @@
  
  $(document).ready(function(){
+ 	
  	$('button').click(function(){
- 		$('').addClass('.hidden');
  		
+ 		$('.text-report').removeClass('hidden');
+
  		var userText = $('#user-text').val();
 
- 		// Total word count
+ 		// Total word count 
 		var wordCount = userText.split(/\s/).length;;
 		$('.word-count').text(wordCount);
 		console.log('hey ' + wordCount);
@@ -28,6 +30,8 @@
 		var averageWordLength = totalCharacters / wordCount;
 		$('.average-word').text(averageWordLength);
 		
+		
+
 		//Average sentence length
 		var numberOfSenteces = userText.split('\n').length;
 		// console.log(numberOfSenteces); 
